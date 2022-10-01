@@ -1,1 +1,1 @@
-export const generateId = jest.fn(() => 'id');
+export const generateId = jest.fn();

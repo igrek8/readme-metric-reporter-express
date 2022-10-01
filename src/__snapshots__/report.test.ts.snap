@@ -2,12 +2,11 @@
 
 exports[`createMiddleware reports metric 1`] = `
 {
-  "_id": "::ffff:127.0.0.1-undefined",
+  "_id": "::ffff:127.0.0.1-12345",
   "clientIPAddress": "::ffff:127.0.0.1",
   "group": {
     "id": "::ffff:127.0.0.1",
   },
-  "id": "req-id",
   "request": {
     "log": {
       "creator": {
