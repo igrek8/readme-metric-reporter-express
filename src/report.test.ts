@@ -5,6 +5,7 @@ import request from 'supertest';
 
 import { IMetricCollector } from './IMetricCollector';
 import { report } from './report';
+import { generateId } from './utils/generateId';
 
 jest.useFakeTimers();
 jest.setSystemTime(new Date('2022-01-01'));
@@ -21,10 +22,7 @@ const reporter = new MetricReporter('apiKey');
 
 const collector: IMetricCollector = {
   collect(_req: Request, _res: Response, metric: Metric) {
-    return {
-      ...metric,
-      id: 'req-id',
-    };
+    return metric;
   },
 };
 
@@ -44,6 +42,7 @@ describe('createMiddleware', () => {
   });
 
   it('reports metric', async () => {
+    (generateId as jest.MockedFunction<typeof generateId>).mockReturnValue('12345');
     const report = jest.spyOn(reporter, 'report').mockImplementation(async () => {});
     await request(server).post('/echo?search=criteria').send({ message: 'test' });
     expect(report.mock.calls[0]?.[0]).toMatchSnapshot();
