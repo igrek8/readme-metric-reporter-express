@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createMiddleware reports metric 1`] = `
+{
+  "_id": "::ffff:127.0.0.1-undefined",
+  "clientIPAddress": "::ffff:127.0.0.1",
+  "group": {
+    "id": "::ffff:127.0.0.1",
+  },
+  "id": "req-id",
+  "request": {
+    "log": {
+      "creator": {
+        "comment": "darwin/10.0.0",
+        "name": "readme-metric-reporter-express",
+        "version": "0.0.0",
+      },
+      "entries": [
+        {
+          "pageref": "http://127.0.0.1:50000/echo?search=criteria",
+          "request": {
+            "headers": [
+              {
+                "name": "host",
+                "value": "127.0.0.1:50000",
+              },
+              {
+                "name": "accept-encoding",
+                "value": "gzip, deflate",
+              },
+              {
+                "name": "content-type",
+                "value": "application/json",
+              },
+              {
+                "name": "content-length",
+                "value": "18",
+              },
+              {
+                "name": "connection",
+                "value": "close",
+              },
+            ],
+            "httpVersion": "HTTP/1.1",
+            "method": "POST",
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{"message":"test"}",
+            },
+            "queryString": [
+              {
+                "name": "search",
+                "value": "criteria",
+              },
+            ],
+            "url": "http://127.0.0.1:50000/echo?search=criteria",
+          },
+          "response": {
+            "content": {
+              "mimeType": "application/json",
+              "size": 234,
+              "text": "{"echo":{"message":"test"}}",
+            },
+            "headers": [
+              {
+                "name": "x-powered-by",
+                "value": "Express",
+              },
+              {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8",
+              },
+              {
+                "name": "content-length",
+                "value": "27",
+              },
+              {
+                "name": "etag",
+                "value": "W/"1b-VUQuMVMiOaIDRK80a/GKMM7BGtI"",
+              },
+            ],
+            "status": 200,
+            "statusText": "OK",
+          },
+          "startedDateTime": "2022-01-01T00:00:00.000Z",
+          "time": 0,
+        },
+      ],
+    },
+  },
+}
+`;
