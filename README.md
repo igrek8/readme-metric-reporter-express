@@ -1,6 +1,6 @@
 # Report Express.js usage to [README.com](https://docs.readme.com/docs/api-metrics-in-readme)
 
-Collect and publish Express.js usage metrics to README.io
+Collect and publish Express.js API usage metrics to README.com
 
 [![NPM](https://badgen.net/npm/v/readme-metric-reporter-express)](https://www.npmjs.com/readme-metric-reporter-express)
 [![Coverage Status](https://coveralls.io/repos/github/igrek8/readme-metric-reporter-express/badge.svg?branch=main)](https://coveralls.io/github/igrek8/readme-metric-reporter-express?branch=main)
