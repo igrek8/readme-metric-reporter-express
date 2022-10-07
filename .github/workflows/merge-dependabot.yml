@@ -12,6 +12,7 @@ env:
 
 jobs:
   merge-dependabot:
+    name: Accept PR
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
