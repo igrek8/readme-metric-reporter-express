@@ -45,4 +45,4 @@
 
 #### Defined in
 
-[report.ts:24](https://github.com/igrek8/readme-metric-reporter-express/blob/3dfb115/src/report.ts#L24)
+[report.ts:24](https://github.com/igrek8/readme-metric-reporter-express/blob/dd84462/src/report.ts#L24)
