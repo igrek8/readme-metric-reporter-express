@@ -70,7 +70,6 @@
   "dependencies": {
     "tslib": "^2",
     "express": "^4",
-    "readme-metric-reporter": "^0.0.4"
-  },
-  "runkitExampleFilename": "./runkit.js"
+    "readme-metric-reporter": "^1.0.0"
+  }
 }
