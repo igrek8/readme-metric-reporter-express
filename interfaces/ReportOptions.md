@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[report.ts:19](https://github.com/igrek8/readme-metric-reporter-express/blob/adb689e/src/report.ts#L19)
+[report.ts:19](https://github.com/igrek8/readme-metric-reporter-express/blob/3dfb115/src/report.ts#L19)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[report.ts:18](https://github.com/igrek8/readme-metric-reporter-express/blob/adb689e/src/report.ts#L18)
+[report.ts:18](https://github.com/igrek8/readme-metric-reporter-express/blob/3dfb115/src/report.ts#L18)
