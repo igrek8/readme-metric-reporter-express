@@ -1,7 +1,8 @@
-import express, { Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { Server } from 'http';
 import { Metric, MetricReporter } from 'readme-metric-reporter';
-import request from 'supertest';
+import * as request from 'supertest';
+import express = require('express');
 
 import { IMetricCollector } from './IMetricCollector';
 import { report } from './report';

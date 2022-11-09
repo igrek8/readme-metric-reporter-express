@@ -3,7 +3,7 @@
 Collect and publish Express.js API usage metrics to README.com
 
 [![NPM](https://badgen.net/npm/v/readme-metric-reporter-express)](https://www.npmjs.com/readme-metric-reporter-express)
-[![Coverage Status](https://coveralls.io/repos/github/igrek8/readme-metric-reporter-express/badge.svg?branch=main)](https://coveralls.io/github/igrek8/readme-metric-reporter-express?branch=main)
+[![Coverage](https://codecov.io/gh/igrek8/readme-metric-reporter-express/branch/main/graph/badge.svg)](https://codecov.io/gh/igrek8/readme-metric-reporter-express)
 ![Release](https://badgen.net/github/checks/igrek8/readme-metric-reporter-express)
 ![License](https://badgen.net/github/license/igrek8/readme-metric-reporter-express)
 [![Runkit](https://badgen.net/badge/runkit/playground/cyan)](https://npm.runkit.com/readme-metric-reporter-express)
@@ -18,9 +18,9 @@ yarn add readme-metric-reporter-express
 
 ## View in the dashboard
 
-![Integration](./docs/images/readme-io-admin.png)
+![Integration](./media/readme-io-admin.png)
 
-## [Integration](./docs/runkit.js)
+## [Integration](./runkit.js)
 
 ```ts
 const express = require('express');

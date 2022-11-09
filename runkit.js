@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const express = require('express');
 const { MetricReporter, MetricReporterMode } = require('readme-metric-reporter');
 const { report } = require('readme-metric-reporter-express');
