@@ -2,7 +2,7 @@
 
 exports[`createMiddleware reports metric 1`] = `
 {
-  "_id": "::ffff:127.0.0.1-12345",
+  "_id": "00000000-0000-0000-0000-000000000000",
   "clientIPAddress": "::ffff:127.0.0.1",
   "group": {
     "id": "::ffff:127.0.0.1",
@@ -32,6 +32,10 @@ exports[`createMiddleware reports metric 1`] = `
                 "value": "application/json",
               },
               {
+                "name": "x-readme-api-explorer",
+                "value": "0.0.0",
+              },
+              {
                 "name": "content-length",
                 "value": "18",
               },
@@ -57,13 +61,17 @@ exports[`createMiddleware reports metric 1`] = `
           "response": {
             "content": {
               "mimeType": "application/json",
-              "size": 234,
+              "size": 317,
               "text": "{"echo":{"message":"test"}}",
             },
             "headers": [
               {
                 "name": "x-powered-by",
                 "value": "Express",
+              },
+              {
+                "name": "x-documentation-url",
+                "value": "http://example.com/logs/00000000-0000-0000-0000-000000000000",
               },
               {
                 "name": "content-type",
