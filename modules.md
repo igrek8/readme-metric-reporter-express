@@ -17,13 +17,13 @@
 
 ### report
 
-▸ **report**(`__namedParameters`): (`req`: `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\>, `res`: `Response`<`any`, `Record`<`string`, `any`\>\>, `next`: `NextFunction`) => `void`
+▸ **report**(`«destructured»`): (`req`: `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\>, `res`: `Response`<`any`, `Record`<`string`, `any`\>\>, `next`: `NextFunction`) => `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `__namedParameters` | [`ReportOptions`](interfaces/ReportOptions.md) |
+| `«destructured»` | [`ReportOptions`](interfaces/ReportOptions.md) |
 
 #### Returns
 
@@ -45,4 +45,4 @@
 
 #### Defined in
 
-[report.ts:37](https://github.com/igrek8/readme-metric-reporter-express/blob/119b7ba/src/report.ts#L37)
+[report.ts:37](https://github.com/igrek8/readme-metric-reporter-express/blob/a5b6c49/src/report.ts#L37)
