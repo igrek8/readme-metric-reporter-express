@@ -1,10 +1,10 @@
+import * as express from 'express';
 import { Request, Response } from 'express';
 import { Server } from 'http';
 import { Metric, MetricReporter } from 'readme-metric-reporter';
 import * as request from 'supertest';
-import { v4, validate } from 'uuid';
-import express = require('express');
 
+import { randomUUID } from 'crypto';
 import { IMetricCollector } from './IMetricCollector';
 import { report } from './report';
 
@@ -17,7 +17,10 @@ jest.mock('os', () => ({
   release: jest.fn().mockReturnValue('10.0.0'),
 }));
 
-jest.mock('uuid');
+jest.mock('crypto', () => ({
+  ...jest.requireActual('crypto'),
+  randomUUID: jest.fn(),
+}));
 
 const reporter = new MetricReporter('apiKey');
 
@@ -43,8 +46,7 @@ describe('createMiddleware', () => {
   });
 
   it('reports metric', async () => {
-    (v4 as jest.MockedFunction<typeof v4>).mockReturnValueOnce('00000000-0000-0000-0000-000000000000');
-    (validate as jest.MockedFunction<typeof validate>).mockReturnValueOnce(true);
+    (randomUUID as jest.MockedFunction<typeof randomUUID>).mockReturnValueOnce('00000000-0000-0000-0000-000000000000');
     const report = jest.spyOn(reporter, 'report').mockImplementation(async () => {});
     await request(server).post('/echo?search=criteria').send({ message: 'test' }).set('x-readme-api-explorer', '0.0.0');
     expect(report.mock.calls[0]?.[0]).toMatchSnapshot();

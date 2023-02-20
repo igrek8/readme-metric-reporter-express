@@ -1,4 +1,5 @@
-import { NextFunction, Request, Response } from 'express';
+import { randomUUID } from 'crypto';
+import type { NextFunction, Request, Response } from 'express';
 import { release, type } from 'os';
 import {
   IMetricReporter,
@@ -7,7 +8,6 @@ import {
   MetricResponseHeader,
 } from 'readme-metric-reporter';
 import { URL } from 'url';
-import { v4 } from 'uuid';
 
 import { IMetricCollector } from './IMetricCollector';
 import { serialize } from './utils/serialize';
@@ -34,7 +34,7 @@ const EXPLORER_HEADER = 'x-readme-api-explorer';
 
 const LOG_URL_HEADER = 'x-documentation-url';
 
-export function report({ collector, reporter, createUUID = () => v4(), baseUrl }: ReportOptions) {
+export function report({ collector, reporter, createUUID = () => randomUUID(), baseUrl }: ReportOptions) {
   return (req: Request, res: Response, next: NextFunction) => {
     const start = new Date();
     const _id = createUUID(req, res);
