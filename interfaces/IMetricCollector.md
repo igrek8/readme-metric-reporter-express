@@ -28,4 +28,4 @@
 
 #### Defined in
 
-[IMetricCollector.ts:5](https://github.com/igrek8/readme-metric-reporter-express/blob/a5b6c49/src/IMetricCollector.ts#L5)
+[IMetricCollector.ts:5](https://github.com/igrek8/readme-metric-reporter-express/blob/e95ee83/src/IMetricCollector.ts#L5)
