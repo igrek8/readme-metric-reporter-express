@@ -24,7 +24,7 @@ Base URL to your readme.io project
 
 #### Defined in
 
-[report.ts:22](https://github.com/igrek8/readme-metric-reporter-express/blob/e95ee83/src/report.ts#L22)
+[report.ts:22](https://github.com/igrek8/readme-metric-reporter-express/blob/95db301/src/report.ts#L22)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[report.ts:24](https://github.com/igrek8/readme-metric-reporter-express/blob/e95ee83/src/report.ts#L24)
+[report.ts:24](https://github.com/igrek8/readme-metric-reporter-express/blob/95db301/src/report.ts#L24)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[report.ts:23](https://github.com/igrek8/readme-metric-reporter-express/blob/e95ee83/src/report.ts#L23)
+[report.ts:23](https://github.com/igrek8/readme-metric-reporter-express/blob/95db301/src/report.ts#L23)
 
 ## Methods
 
@@ -67,4 +67,4 @@ Create a metric id for the request
 
 #### Defined in
 
-[report.ts:28](https://github.com/igrek8/readme-metric-reporter-express/blob/e95ee83/src/report.ts#L28)
+[report.ts:28](https://github.com/igrek8/readme-metric-reporter-express/blob/95db301/src/report.ts#L28)
