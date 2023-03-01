@@ -139,9 +139,8 @@ export function report({ collector, reporter, createUUID = () => randomUUID(), b
             },
           })
         );
-      } catch {
-        /* istanbul ignore next */
-      }
+        /* c8 ignore next */
+      } catch {} // eslint-disable-line no-empty
     });
     next();
   };
